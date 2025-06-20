@@ -16,5 +16,7 @@ jobs:
 
     steps:
 
-      - run: echo "secret ${{ secrets.MY }} ."
+      - run: |
+           echo "secret ${{ secrets.MY }} ."
+           echo "variable ${{ vars.JOB_NAME }} ."
 
